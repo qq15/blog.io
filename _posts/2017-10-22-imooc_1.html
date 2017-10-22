@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -8,9 +9,22 @@
         {
             alert("哈哈，调用函数了!");
         }
+        
+        function rec(){
+    var mymessage= confirm("你是女士吗？");
+    if(mymessage==true)
+    {
+    	document.write("你是女士!");
+    }
+    else
+    {
+        document.write("你是男士!");
+    }
+  }    
     </script>
 </head>
 <body>
+<input name="button" type="button" onClick="rec()" value="点击我，弹出确认对话框" />    
 <form>
     <input type="button"  value="点击我" onclick="contxt()" />
 </form>
