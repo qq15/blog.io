@@ -1,5 +1,4 @@
-
-<!DOCTYPE HTML>
+2<!DOCTYPE HTML>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -21,9 +20,34 @@
         document.write("你是男士!");
     }
   }    
+        
+        function rec2(){
+	var score; //score变量，用来存储用户输入的成绩值。
+	score =  prompt("输入你的成绩")              ;
+	if(score>=90)
+	{
+	   document.write("你很棒!");
+	}
+	else if(score>=75)
+    {
+	   document.write("不错吆!");
+	}
+	else if(score>=60)
+    {
+	   document.write("要加油!");
+    }
+    else
+	{
+       document.write("要努力了!");
+	}
+  }
+        
     </script>
 </head>
 <body>
+
+<input name="button" type="button" onClick="rec2()" value="点击我，对成绩做评价!" />
+    
 <input name="button" type="button" onClick="rec()" value="点击我，弹出确认对话框" />    
 <form>
     <input type="button"  value="点击我" onclick="contxt()" />
